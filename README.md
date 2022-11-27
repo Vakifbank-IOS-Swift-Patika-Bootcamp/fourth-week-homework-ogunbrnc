@@ -10,6 +10,8 @@
 
 • If the character's date of birth is not known, it is indicated as "Unknown".
 
+• Indicator is shown until data comes from API
+
 Light Mode | Dark Mode 
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/48843277/204154239-97139ec4-10ab-4ecd-bd1c-0b7749a9afd0.png" width="256" height="512">|<img src="https://user-images.githubusercontent.com/48843277/204154301-193dee46-24a2-441f-a58b-3844cac8edc5.png" width="256" height="512">
@@ -41,6 +43,8 @@ Light Mode | Dark Mode
 
 • If the character has a quote, it is listed as a table. Otherwise, it will return to the detail page with a warning.
 
+• Indicator is shown until data comes from API
+
 Light Mode | Dark Mode 
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/48843277/204154554-d4247f16-634b-490a-9463-1807badb72d9.png" width="256" height="512">|<img src="https://user-images.githubusercontent.com/48843277/204154556-9b007ce8-8719-4917-ba6d-1463dee9a3e6.png" width="256" height="512">
@@ -54,8 +58,12 @@ Light Mode | Dark Mode
 # 2.Tab - Episodes:
 
 • Episodes are listed on the screen, divided into seasons.
+
 • When a section is clicked, the players playing in that section are listed.
+
 • Close button action is managed by delegate.
+
+• Indicator is shown until data comes from API
 
 Light Mode | Dark Mode 
 :-------------------------:|:-------------------------:
