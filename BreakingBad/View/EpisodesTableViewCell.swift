@@ -52,6 +52,7 @@ final class EpisodesTableViewCell: UITableViewCell {
         addSubview(episodeSeasonLabel)
     }
     
+    // Season and episode will be used seperated by "." to be more readable.
     func configure(with model: Episode){
         episodeNameLabel.text = model.title
         episodeSeasonLabel.text = model.season + "." + model.episode

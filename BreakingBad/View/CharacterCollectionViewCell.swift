@@ -87,7 +87,7 @@ final class CharacterCollectionViewCell: UICollectionViewCell {
         addSubview(characterBirthdayLabel)
         
     }
-    
+    // If there is no image, the "photo" image will be used to provide a consistent structure
     func configure(with model: Character){
         characterNameLabel.text = model.name
         characterNicknameLabel.text = model.nickname
@@ -102,7 +102,6 @@ final class CharacterCollectionViewCell: UICollectionViewCell {
         configureSubviews()
         configureConstraints()
     }
-    
     
     required init?(coder: NSCoder) {
         fatalError()

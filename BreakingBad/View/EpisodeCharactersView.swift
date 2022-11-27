@@ -61,8 +61,9 @@ final class EpisodeCharactersView: UIView {
         NSLayoutConstraint.activate(cancelButtonConstraints)
        
     }
-    
+    // We combined character names to show them in a single label.
     private func configureSubviews() {
+        episodeCharactersLabel.text = characters?.reduce("") {$0 + $1 + "\n"}
         addSubview(episodeCharactersLabel)
         addSubview(cancelButton)
     }
@@ -75,9 +76,8 @@ final class EpisodeCharactersView: UIView {
     // MARK: Life Cycle Methods
     init(frame: CGRect,characters: [String]?) {
         super.init(frame: frame)
+        self.characters = characters
         configureUI()
-        episodeCharactersLabel.text = characters?.reduce("") {$0 + $1 + "\n"}
-        
         
         configureSubviews()
         configureConstraints()

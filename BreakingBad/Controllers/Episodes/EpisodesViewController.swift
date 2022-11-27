@@ -16,6 +16,8 @@ final class EpisodesViewController: BaseViewController {
     @IBOutlet weak var episodesTableView: UITableView!
     
     // MARK: Configure UI Components
+    
+    // We create a 2D episode array using episode array to divide the TableView into sections
     private func createEpisodeSections(with episodes: [Episode]) {
         let totalSeasonNumber = 5
         for i in 1...totalSeasonNumber {
@@ -36,9 +38,9 @@ final class EpisodesViewController: BaseViewController {
         indicatorView.startAnimating()
         Client.getEpisodes { [weak self] episodes, error in
             guard let self = self else { return }
+            self.indicatorView.stopAnimating()
             self.createEpisodeSections(with: episodes ?? [])
         }
-        indicatorView.stopAnimating()
     }
     
     // MARK: Life Cycle Methods

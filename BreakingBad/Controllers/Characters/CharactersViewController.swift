@@ -31,9 +31,9 @@ final class CharactersViewController: BaseViewController {
         indicatorView.startAnimating()
         Client.getCharacters { [weak self] characters, error in
             guard let self = self else { return }
+            self.indicatorView.stopAnimating()
             self.characters = characters
         }
-        indicatorView.stopAnimating()
 
     }
     // MARK: Life Cycle Methods

@@ -12,7 +12,7 @@ class BaseViewController: UIViewController {
     //MARK: UI Components
     var indicatorView: UIActivityIndicatorView = {
       let view = UIActivityIndicatorView(style: .medium)
-      view.color = .white
+      view.color = .label
       view.translatesAutoresizingMaskIntoConstraints = false
       return view
     }()
